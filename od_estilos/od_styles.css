@@ -78,3 +78,8 @@ img {
   border-radius: 10px;
   padding: 10px;
 }
+
+.od_estilo_php{
+    text-decoration: none;
+    color: white;
+}
