@@ -54,32 +54,48 @@ img {
 }
 
 /* Estilos para productos */
-.od_org_por_producto{
-    color: white;
-    display: flex;
+.od_org_por_producto {
+  color: white;
+  display: flex;
 }
 
-.od_organizacion_productos{
-    margin: 20px;
+.od_organizacion_productos {
+  margin: 20px;
 }
 
-.od_infoProducto{
-    padding: 10px;
+.od_infoProducto {
+  padding: 10px;
 }
 
-.od_estilo_contacto{
-    color: white;
+.od_estilo_contacto {
+  color: white;
 }
 
-.od_color_button{
-    color: black;
+.od_color_button {
+  color: black;
   text-decoration: none;
   border: solid 1px white;
   border-radius: 10px;
   padding: 10px;
 }
 
-.od_estilo_php{
-    text-decoration: none;
-    color: white;
+.od_estiloPhp {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+@media only screen and (max-width: 395px) {
+  .od_tituloPagina {
+    font-size: 40px;
+  }
+  
+  .od_org_por_producto{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .od_imagen_responsive{
+    width: 200px;
+    height: 200px;
+  }
 }

@@ -31,17 +31,17 @@ conectar();
   <main>
     <div class="od_organizacion_productos">
       <div class="od_org_por_producto">
-        <img src="od_imagenes/od_celular1.jpg" alt="" width="350px" height="350px" />
+        <img class="od_imagen_responsive" src="od_imagenes/od_celular1.jpg" alt="" width="350px" height="350px" />
         <div class="od_infoProducto">
           
-          <h1 class="od_estilo_php" ><?php
+          <h1><?php
           
           $sql = "SELECT * from od_productos where id =1";
           $sql = mysqli_query($con, $sql);
           if (mysqli_num_rows($sql) != 0) {
             while ($r = mysqli_fetch_array($sql)) {
               ?>
-              <a href="od_producto.php<?php  ?> ">
+              <a class="od_estiloPhp"  href="od_producto.php<?php  ?> ">
                 <?php echo $r['nombre_item']; ?>
               </a>
               <?php
@@ -65,16 +65,16 @@ conectar();
         </div>
       </div>
       <div class="od_org_por_producto">
-        <img src="od_imagenes/od_celular2.png" alt="" width="350px" height="350px" />
+        <img class="od_imagen_responsive" src="od_imagenes/od_celular2.png" alt="" width="350px" height="350px" />
         <div class="od_infoProducto">
-          <h1><?php
+          <h1 class= "od_estiloPhp"><?php
           
           $sql = "SELECT * from od_productos where id =2";
           $sql = mysqli_query($con, $sql);
           if (mysqli_num_rows($sql) != 0) {
             while ($r = mysqli_fetch_array($sql)) {
               ?>
-              <a href="od_producto.php<?php  ?> ">
+              <a class="od_estiloPhp" href="od_producto.php<?php  ?> ">
                 <?php echo $r['nombre_item']; ?>
               </a>
               <?php
@@ -91,7 +91,7 @@ conectar();
         </div>
       </div>
       <div class="od_org_por_producto">
-        <img src="od_imagenes/od_celular3.jpg" alt="" width="350px" height="350px" />
+        <img class="od_imagen_responsive" src="od_imagenes/od_celular3.jpg" alt="" width="350px" height="350px" />
         <div class="od_infoProducto">
           <h1>Motorola</h1>
           <p>
